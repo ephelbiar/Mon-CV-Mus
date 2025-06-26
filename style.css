@@ -1,0 +1,107 @@
+/* ========== Corps de la page ========== */
+body {
+    background: #62d0e4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-image: url('C:\Users\ESI\Desktop\Mon CV\Data'); /* Remplace par le chemin réel */
+      background-size: cover; /* Ajuste pour couvrir tout l'écran */
+      background-repeat: no-repeat; /* Évite la répétition */
+     
+
+/* ========== Conteneur A4 ========== */
+.cv-page {
+    background: #57f1d8;
+    width: 21cm;
+    height: 29.7cm;
+    padding: 2cm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+/* ========== En-tête ========== */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.clock {
+    font-size: 14px;
+    color: #e27b27;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+/* ========== Image de profil ========== */
+.profile-image {
+    width: 4cm;
+    height: 4cm;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #2e99b9;
+    margin: 10px auto;
+    display: block;
+}
+
+/* ========== Titres ========== */
+h1, h2 {
+    color: #2c3e50;
+    margin: 0.5cm 0 0.3cm;
+}
+
+/* ========== Sections générales ========== */
+section {
+    margin-bottom: 1.2cm;
+}
+
+/* ========== Tableaux ========== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    color: #2c1bc9;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* ========== Liens ========== */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Impression ========== */
+@media print {
+    body {
+        background: none;
+        margin: 0;
+    }
+
+    .cv-page {
+        box-shadow: none;
+        margin: 0;
+        width: auto;
+        height: auto;
+        padding: 0;
+    }
+}
+}
+footer {
+    text-align-last: left;
+    padding: 2%;
+    background: #2980b9;
+}

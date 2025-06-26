@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mustapha Benani">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV – Mustapha Benani (Protégé)</title>
+
+    <!-- Feuille de style externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Message d’accueil -->
+    <p id="welcome-text">Soyez les bienvenus, appelez-moi si vous le souhaitez.</p>
+    <a href="#" id="alert-link">Message d’alerte</a>
+
+    <!-- Formulaire de mot de passe -->
+    <div id="password-container" class="password-form">
+        <h2>Accès protégé</h2>
+        <p>Veuillez entrer le mot de passe pour afficher le CV&nbsp;:</p>
+        <input type="password" id="password-input" placeholder="Mot de passe">
+        <button id="btn-valider">Valider</button>
+        <p id="error-message" class="error"></p>
+    </div>
+
+    <!-- Contenu du CV (caché au chargement) -->
+    <div id="cv-content">
+        <div class="cv-page">
+            <header>
+                <h1><i>Curriculum Vitae</i></h1>
+                <div id="clock" class="clock"></div>
+                <img src="image.jpg" alt="Photo de Mustapha Benani" class="profile-image">
+            </header>
+
+            <section>
+                <h2><u>Identification</u></h2>
+                <p><strong>Nom&nbsp;:</strong> Benani</p>
+                <p><strong>Prénom&nbsp;:</strong> Mustapha</p>
+                <p><strong>Date de naissance&nbsp;:</strong> 10&nbsp;septembre&nbsp;1976</p>
+                <p><strong>Diplôme obtenu&nbsp;:</strong> Assistant ingénieur en informatique</p>
+                <p><strong>Adresse&nbsp;:</strong> Alger Centre</p>
+                <p><strong>Téléphone&nbsp;:</strong> 0663&nbsp;54&nbsp;81&nbsp;46</p>
+                <p><strong>Études&nbsp;:</strong> <a href="https://www.esi.dz" target="_blank">ESI – École Nationale Supérieure en Informatique</a></p>
+                <p><strong>Email&nbsp;:</strong> <a href="mailto:Musben90@gmail.com">Musben90@gmail.com</a></p>
+            </section>
+
+            <section>
+                <h2><u>Expériences professionnelles</u></h2>
+                <button id="btn-toggle-exp">Afficher/Masquer les expériences</button>
+                <div id="experience-list">
+                    <ol>
+                        <li>Entreprise&nbsp;1 – 2010</li>
+                        <li>Entreprise&nbsp;2 – depuis&nbsp;2015</li>
+                        <li>Entreprise&nbsp;3 – depuis&nbsp;2020 à ce jour</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section>
+                <h2><u>Informations complémentaires</u></h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Âge</th>
+                            <th>Ville</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mus</td>
+                            <td>Ben</td>
+                            <td>48</td>
+                            <td>Alger</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <!-- Script externe -->
+    <script src="script.js"></script>
+
+    <!-- Pied-de-page -->
+    <footer>
+        <p>&copy;&nbsp;Mustapha&nbsp;Benani&nbsp;2025 – Tous droits réservés</p>
+        <p>« Pour servir ce que de droit »</p>
+    </footer>
+</body>
+</html>
